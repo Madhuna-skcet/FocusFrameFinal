@@ -1,0 +1,151 @@
+/* Updated CSS */
+.image-slider {
+    position: relative;
+    width: 100%;
+    max-width: 1200px; /* Set a maximum width for the slider */
+    margin: 0 auto; /* Center the slider */
+    overflow: hidden; /* Hide overflow */
+  }
+  .Perfect{
+    padding-left: 60px;
+  }
+  
+  .slider-image {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  .left-arrow {
+    left: 10px;
+  }
+  
+  .right-arrow {
+    right: 10px;
+  }
+  
+  /* Adjust sidebar for proper layout */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -300px; /* Hidden by default */
+    width: 300px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9); /* Transparent background */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 1000;
+    transition: left 0.3s ease;
+    overflow-y: auto;
+  }
+  
+  .sidebar.open {
+    left: 0; /* Slide in the sidebar */
+  }
+  
+  .sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .close-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    align-self: flex-end; /* Align close button to the right */
+  }
+  
+  .clear-button {
+    background-color: #e74c3c;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .filter-option {
+    margin-bottom: 20px;
+  }
+  
+  .filter-option h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  .filter-btn {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+  }
+  
+  .filter-btn.selected {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .range-slider {
+    width: 100%;
+  }
+  
+  .range-values {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+  }
+  
+  /* Header Section */
+  .header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .filter-sort {
+    display: flex;
+    align-items: center;
+  }
+  
+  .sort-dropdown {
+    margin-right: 20px;
+    height:35px;
+
+  }
+  
+  .filter-button {
+    display: flex;
+    align-items: center;
+    background-color: #562828;
+    color: white;
+    border:none;
+    padding: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 75px;
+  }
+  
+  .filter-icon {
+    margin-right: 5px;
+  }
+  

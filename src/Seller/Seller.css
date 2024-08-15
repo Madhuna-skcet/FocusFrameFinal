@@ -1,0 +1,84 @@
+/* Apply background image to the entire page */
+.seller-login-page {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('../assets/back.jpeg') no-repeat center center/cover;
+  }
+  
+  /* Container for the seller login modal */
+  .seller-login-container {
+    max-width: 500px;
+    width: 100%;
+    padding-top: 1px;
+    padding-left: 50px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header styles */
+  .seller-login-container h2 {
+    padding-left: 130px;
+    margin-bottom: 20px;
+    color: #074230; /* Blue color for the header */
+  }
+  
+  /* Form labels */
+  .seller-login-container label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* Form inputs */
+  .seller-login-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  /* Button styles */
+  .seller-login-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #063a1f; /* Blue color for the button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .seller-login-container button:hover {
+    background-color: #114732; /* Darker blue for hover effect */
+  }
+  
+  /* Footer styles */
+  .seller-login-container .seller-login-footer {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .seller-login-container .seller-login-footer p {
+    margin: 0;
+    color: #555;
+  }
+  
+  .seller-login-container .seller-login-footer span {
+    color: #09392e;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .seller-login-container .seller-login-footer span:hover {
+    text-decoration: underline;
+  }
+  

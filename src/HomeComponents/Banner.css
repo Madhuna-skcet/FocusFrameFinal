@@ -1,0 +1,68 @@
+.banner-container {
+  margin-top: 100px;
+  margin-left:100px;
+  margin-right: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ background: linear-gradient(to right, #3b82f6, #55c9c9, #22c55e);  border-radius: 10px;
+  overflow: hidden;
+}
+
+.banner-content {
+  color: white;
+  flex: 1;
+  margin-right: 20px; /* Add margin to separate content from video */
+}
+
+.banner-title {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.banner-subtitle {
+  font-size: 1.2rem; /* Reduced font size */
+  margin-bottom: 2rem;
+}
+
+.banner-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.banner-button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.banner-button.primary {
+  background-color: #0f0f0f; /* Dark blue */
+  color: #fff;
+}
+
+.banner-button.secondary {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.banner-video-container {
+  flex: 2.0; /* Increase flex value to give more space to the video */
+  margin-left: 30px; /* Add margin to separate video from content */
+}
+
+.banner-video {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}

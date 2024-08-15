@@ -1,0 +1,106 @@
+/* Container with Background Image */
+.pickup-details-wrapper {
+  max-width: 600px;
+  margin: 0px 80px 20px 350px;
+  padding: 50px 50px 50px 100px;
+  background: #f9f9f9;
+  
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+  position: relative;
+  /* Blinking/Lighting effect */
+  animation: glow 2s infinite alternate;
+}
+
+/* Blinking/Lighting Effect */
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 20px rgba(0, 211, 176, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 30px rgba(148, 0, 211, 0.8);
+  }
+}
+
+.pickup-heading {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Subtle text shadow */
+}
+
+.pickup-form .form-group {
+  margin-bottom: 15px;
+}
+
+.pickup-form .form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.pickup-form .form-group input,
+.pickup-form .form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.pickup-form .form-group input:focus,
+.pickup-form .form-group textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  outline: none;
+}
+
+.pickup-form .form-group.checkbox-group {
+  display: flex;
+  align-items: center;
+}
+
+.pickup-form .form-group.checkbox-group input {
+  margin-right: 10px;
+  width: 20px; /* Adjust size of the checkbox */
+  height: 20px;
+}
+
+.generate-code-button {
+  width: 100%;
+  padding: 12px;
+  background: #d633f7;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.generate-code-button:hover {
+  background: #e374f9;
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.code-display {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.code-display h3 {
+  font-size: 20px;
+  margin: 10px 0;
+  color: #333;
+}
+
+.code-display h3 span {
+  color: #007bff;
+  font-weight: bold;
+}

@@ -1,0 +1,154 @@
+/* Container for the payment page */
+.payment-container {
+  padding: 40px;
+  max-width: 600px;
+  margin-top:130px;
+  margin-left:300px;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading style */
+.payment-container h2 {
+  margin-bottom: 30px;
+  color: #333;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Flexbox for payment options */
+.payment-options {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+/* Payment option card */
+.payment-option {
+  cursor: pointer;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s ease;
+  width: 150px;
+}
+
+/* Hover and selected styles */
+.payment-option:hover {
+  border-color: #0073e6;
+  background-color: #f0f8ff;
+}
+
+.payment-option.selected {
+  border-color: #0073e6;
+  background-color: #e6f3ff;
+}
+
+/* Button to proceed with payment */
+.payment-btn {
+  padding: 12px 30px;
+  background-color: #0073e6;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.payment-btn:hover {
+  background-color: #005bb5;
+}
+
+/* Modal overlay for QR code */
+.qr-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal content for QR code */
+.qr-content {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* QR code image styling */
+.qr-img {
+  max-width: 200px;
+  max-height: 200px;
+  margin-bottom: 20px;
+  border: 2px solid #0073e6;
+  border-radius: 10px;
+}
+
+/* Close button for the modal */
+.close-btn {
+  padding: 10px 30px;
+  background-color: #0073e6;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.close-btn:hover {
+  background-color: #005bb5;
+}
+.qr-modal,
+.success-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.qr-content,
+.success-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.qr-img,
+.success-img {
+  width: 200px;
+  height: 200px;
+  margin: 10px 0;
+}
+
+.close-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}

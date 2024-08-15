@@ -1,0 +1,148 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f3f3f3; /* Light background for better contrast */
+}
+
+/* Container Styles */
+.seller-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(135deg, #e0c3fc, #8ec5fc); /* Purple to blue gradient */
+  min-height: 100vh;
+  padding: 90px 20px;
+  transition: background 0.3s ease;
+}
+
+/* Header Styles */
+.seller-home-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.seller-home-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+  background: linear-gradient(45deg, #a855f7, #d633f7); /* Purple gradient text */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientAnimation 6s ease infinite;
+}
+
+.seller-home-subtitle {
+  font-size: 1.1rem;
+  color: #f5f5f5; /* Light color for better readability */
+  margin-top: 10px;
+}
+
+/* Content Styles */
+.seller-home-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* Card Styles */
+.seller-home-card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.seller-home-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  background: #f0f8ff;
+}
+
+/* Card Icon */
+.card-icon {
+  font-size: 2rem;
+  color: #a855f7; /* Purple color for icons */
+  margin-bottom: 10px;
+}
+
+/* Card Title */
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Card Description */
+.card-description {
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+/* Card Button */
+.card-button {
+  background: linear-gradient(45deg, #a855f7, #d633f7); /* Purple gradient button */
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  padding: 12px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.card-button:hover {
+  background: linear-gradient(45deg, #d633f7, #a855f7); /* Reversed gradient on hover */
+  transform: scale(1.05);
+}
+
+/* Marquee Styles */
+.marquee {
+  width: 100%;
+  background: #333;
+  color: #fff;
+  padding: 10px 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  text-align: center;
+}
+
+.marquee p {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marqueeAnimation 15s linear infinite;
+}
+
+/* Animations */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+@keyframes marqueeAnimation {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

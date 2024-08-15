@@ -1,0 +1,161 @@
+/* General Styles */
+* {
+  box-sizing: border-box;
+ 
+}
+.navbar-login {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  margin-left: 1rem; /* Space between the buttons */
+}
+
+/* Navbar Container */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #f8f9fa; /* Soft light gray for a clean look */
+  border-bottom: 1px solid #dee2e6;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+/* Left Section: Logo and Profile */
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.navbar-profile {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.navbar-profile-name {
+  font-family: 'Poppins', sans-serif;
+  color: #343a40;
+  font-size: 18px;
+  font-weight: bold;
+}
+.navbar-profile-name:hover{
+  background-color:#b5bdb2;
+}
+/* Center Section: Search Bar */
+.navbar-center {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-search {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+}
+
+.navbar-search-input {
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: 1px solid #ced4da;
+  width: 100%;
+  background-color: #ffffff;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.navbar-search-input:focus {
+  border-color: #495057;
+  box-shadow: 0 0 5px rgba(72, 84, 96, 0.5);
+  outline: none;
+}
+
+.navbar-search-icon {
+  position: absolute;
+  right: 15px;
+  pointer-events: none;
+  font-size: 20px;
+  color: #6c757d;
+}
+
+/* Right Section: Buttons and Icons */
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-explore-button {
+  background: linear-gradient(to right, #caccd1, #d4dbd8); /* Blue to Green gradient */
+  color: rgb(14, 12, 12);
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.navbar-explore-button:hover {
+  box-shadow: 0 0 10px rgba(8, 154, 17, 0.5);
+}
+
+.navbar-icon-button {
+  position: relative;
+  margin-right: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-icon {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.navbar-icon:hover {
+  transform: scale(1.1);
+}
+
+.navbar-badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: #dc3545;
+  color: white;
+  border-radius: 50%;
+  padding: 5px;
+  font-size: 12px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
